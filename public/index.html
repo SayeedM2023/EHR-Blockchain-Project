@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Health Record (EHR) System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Electronic Health Record System</h1>
+
+        <button class="btn" onclick="createPatient()">Create Patient</button>
+        <button class="btn" onclick="queryPatient()">Query Patient</button>
+        <button class="btn" onclick="updatePatient()">Update Patient</button>
+
+        <div class="result">
+            <h2>Result:</h2>
+            <pre id="resultText">No results yet...</pre>
+        </div>
+    </div>
+
+    <script src="/src/ui.js"></script>
+</body>
+</html>
